@@ -130,7 +130,7 @@ namespace WebCompiler
             SassOptions options = SassOptions.FromConfig(config);
 
             if (options.SourceMap || config.SourceMap)
-                arguments += " --source-map-embed=true";
+                arguments += " --source-map=true";
 
             arguments += " --precision=" + options.Precision;
 
